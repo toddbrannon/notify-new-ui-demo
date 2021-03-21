@@ -378,11 +378,12 @@ form.sign-up-form {
 }
 
 @media (max-width: 570px) {
-  .container-main {
-    height: 100vh;
+  /* .container-main {
+    height: 100%;
     min-height: 90%;
-    width: 100vw;
-  }
+    width: 100%;
+  } */
+
   form {
     padding: 0 1.5rem;
   }
@@ -402,5 +403,6 @@ form.sign-up-form {
   }
   .right-panel .content {
     transform: translateY(300px);
+    margin-bottom: 3rem;
   }
 }
