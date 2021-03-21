@@ -11,6 +11,15 @@ input {
   font-family: 'Poppins', sans-serif;
 }
 
+/* body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+} */
+
 .container {
   position: relative;
   width: 100%;
@@ -268,6 +277,16 @@ form.sign-up-form {
   opacity: 1;
 }
 
+/* Hidding social sign-in for now */
+.social-text {
+  visibility: hidden;
+  height: 0;
+}
+
+.social-media {
+  visibility: hidden;
+}
+
 @media (max-width: 870px) {
   .container {
     min-height: 800px;
@@ -359,6 +378,11 @@ form.sign-up-form {
 }
 
 @media (max-width: 570px) {
+  .container-main {
+    height: 100vh;
+    min-height: 90%;
+    width: 100vw;
+  }
   form {
     padding: 0 1.5rem;
   }
@@ -375,5 +399,8 @@ form.sign-up-form {
   .container.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
+  }
+  .right-panel .content {
+    transform: translateY(300px);
   }
 }
